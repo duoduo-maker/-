@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>像素風格作品集 | Pixel Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+      <div class="start-container">
+        <img
+          src="images/start-btn.png"
+          alt="Start Game"
+          id="start-btn"
+          class="pixel-btn-img"
+        />
+        <p class="blink-text">CLICK TO START</p>
+      </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+      <nav class="pixel-nav">
+        <button class="nav-btn active" onclick="showSection('about')">
+          自我介紹
+        </button>
+        <button class="nav-btn" onclick="showSection('works')">作品展示</button>
+        <button class="nav-btn" onclick="showSection('hobbies')">
+          個人興趣
+        </button>
+      </nav>
+
+      <main class="content-container">
+        <section id="about" class="page-section">
+          <div class="about-card pixel-box">
+            <div class="avatar-wrapper">
+              <div class="avatar-border">
+                <img src="images/avatar.jpg" alt="自拍照" class="avatar-img" />
+              </div>
+            </div>
+
+            <div class="about-text-container">
+              <div class="double-line-top"></div>
+              <div class="about-text">
+                <h2>許愛昕</h2>
+                <p>一名在實踐大學努力過日子的大二生。</p>
+                <p>專長是使用神秘的畫風創飛未來的自己。</p>
+                <p>歡迎點擊上方選單瀏覽我的專案作品與平時畫的神秘電繪。</p>
+              </div>
+              <div class="double-line-bottom"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="works" class="page-section hidden">
+          <h2 class="section-title">我的作品</h2>
+          <div class="pixel-grid">
+            <div class="grid-card pixel-box">
+              <img src="images/work1.jpg" alt="作品 1" class="zoomable-img" />
+              <h3>傾聽</h3>
+              <p>這麼多張訴苦的嘴中，是否有其中一個是自己呢？</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work2.jpg" alt="作品 2" class="zoomable-img" />
+              <h3>樂觀的殺傷力</h3>
+              <p>總是用樂觀包覆所有問題，是否有一天會墜下來刺向自己呢？</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work3.jpg" alt="作品 3" class="zoomable-img" />
+              <h3>只是消毒</h3>
+              <p>做了那麼多筆記，卻如同消毒一般，解決不了真正的問題。</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work4.jpg" alt="作品 4" class="zoomable-img" />
+              <h3>索爾·巴斯</h3>
+              <p>如果他有明信片，應該可以長這樣。</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work5.jpg" alt="作品 5" class="zoomable-img" />
+              <h3>消費最後的價值</h3>
+              <p>當初救濟他人的糧倉，最終成了裝著精緻美食的空殼。</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work6.jpg" alt="作品 6" class="zoomable-img" />
+              <h3>貓湯</h3>
+              <p>一部奇妙的電影，這是我為它畫的海報。</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work7.jpg" alt="作品 7" class="zoomable-img" />
+              <h3>家隅</h3>
+              <p>你看過家裡的所有角落嗎？</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work8.jpg" alt="作品 8" class="zoomable-img" />
+              <h3>勿忘我</h3>
+              <p>我原創的動畫，私心放的有點多了。</p>
+            </div>
+
+            <div class="grid-card pixel-box">
+              <img src="images/work9.jpg" alt="作品 9" class="zoomable-img" />
+              <h3>水平儀壞掉了</h3>
+              <p>在平行世界裡，壞掉的水平儀被裝上了肌肉。</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="hobbies" class="page-section hidden">
+          <h2 class="section-title">我空閒時會畫的東西</h2>
+          <div class="pixel-grid">
+            <div class="grid-card pixel-box">
+              <img src="images/hobby1.jpg" alt="興趣 1" class="zoomable-img" />
+              <h3>休假的壞人先生</h3>
+              <p>他倆很好嗑哦！</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby2.jpg" alt="興趣 2" class="zoomable-img" />
+              <h3>神秘的狐狸</h3>
+              <p>很明顯了，我喜歡眯眯眼狐狸。</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby3.jpg" alt="興趣 3" class="zoomable-img" />
+              <h3>エイハブ「イェルプ」</h3>
+              <p>一首我喜歡的音樂，忍不住用自己的風格畫了下來。</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby4.jpg" alt="興趣 4" class="zoomable-img" />
+              <h3>妖怪學校的新人教師</h3>
+              <p>主角是個很可愛的天然呆呢！</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby5.jpg" alt="興趣 5" class="zoomable-img" />
+              <h3>不知道</h3>
+              <p>不知道呀！反正就是把想畫的劇情畫出來了！</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby6.jpg" alt="興趣 6" class="zoomable-img" />
+              <h3>勿忘我-前傳</h3>
+              <p>我想繼續將動畫的主角們的故事延續下去，我要畫漫畫！</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby7.jpg" alt="興趣 7" class="zoomable-img" />
+              <h3>書則依</h3>
+              <p>用live2D做的海草君。</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby8.jpg" alt="興趣 8" class="zoomable-img" />
+              <h3>友善的鬼鬼</h3>
+              <p>有上架的貼圖，是可愛的鬼鬼呢！</p>
+            </div>
+            <div class="grid-card pixel-box">
+              <img src="images/hobby9.jpg" alt="興趣 9" class="zoomable-img" />
+              <h3>可愛的眯眯眼狐狸</h3>
+              <p>還未畫完未上架的貼圖。</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="image-modal" class="pixel-modal hidden">
+      <div class="modal-box pixel-box">
+        <img id="modal-img" src="" alt="完整大圖" />
+        <p class="modal-tip">【 點擊旁邊空白處關閉 】</p>
+      </div>
+    </div>
+
+    <script>
+      const startBtn = document.getElementById("start-btn");
+      const startScreen = document.getElementById("start-screen");
+      const mainContent = document.getElementById("main-content");
+
+      startBtn.addEventListener("click", function () {
+        startBtn.src = "images/explode.png";
+        startBtn.classList.add("float-away-anim");
+
+        setTimeout(() => {
+          startScreen.style.display = "none";
+          mainContent.classList.remove("hidden");
+          mainContent.classList.add("fade-in");
+        }, 1500);
+      });
+
+      function showSection(sectionId) {
+        const sections = document.querySelectorAll(".page-section");
+        sections.forEach((sec) => sec.classList.add("hidden"));
+
+        document.getElementById(sectionId).classList.remove("hidden");
+
+        const navBtns = document.querySelectorAll(".nav-btn");
+        navBtns.forEach((btn) => btn.classList.remove("active"));
+        event.target.classList.add("active");
+      }
+
+      const modal = document.getElementById("image-modal");
+      const modalImg = document.getElementById("modal-img");
+      const zoomableImages = document.querySelectorAll(".zoomable-img");
+
+      zoomableImages.forEach((img) => {
+        img.addEventListener("click", function () {
+          modalImg.src = this.src;
+          modal.classList.remove("hidden");
+        });
+      });
+
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+          modalImg.src = "";
+        }
+      });
+    </script>
+  </body>
+</html>
